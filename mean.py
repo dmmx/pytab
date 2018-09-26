@@ -2,13 +2,16 @@
 
 import sys
 
-dataset=[]
-filename = sys.argv[1]
-file = open(filename, 'r')
-contents = file.readlines()
+def mean(filename):
+	dataset=[]
+	file = open(filename, 'r')
+	contents = file.readlines()
 
-for line in contents:
-	dataset.append(int(line))
+	for line in contents:
+		dataset.append(int(line))
 
-print("Mean: " + str(sum(dataset)/len(dataset)))
+	print("Mean: " + str(sum(dataset)/len(dataset)))
 
+if __name__ == "__main__":
+	filename = sys.argv[1]
+	mean(filename)
