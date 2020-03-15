@@ -1,2 +1,2 @@
 # pytab
-python data science application
+Statistical and data science programs. 
